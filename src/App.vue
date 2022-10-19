@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div v-heatmap="showHeatmap" style="height: 1000px;width: 1000px;">
-      <img height="1000px" width="1000px" src="https://s.yimg.com/uu/api/res/1.2/.UNeFRizayxt5n8b9Rk4_A--~B/aD0xMjAwO3c9MTgwMDthcHBpZD15dGFjaHlvbg--/https://o.aolcdn.com/hss/storage/midas/8077e086fe57dcd40c8ddc3dc0812482/204452788/edit24.jpg">
+    <div v-heatmap="showHeatmap" style="height: 1000px;width: 3000px;">
+      <img height="1000px" width="3000px" src="https://s.yimg.com/uu/api/res/1.2/.UNeFRizayxt5n8b9Rk4_A--~B/aD0xMjAwO3c9MTgwMDthcHBpZD15dGFjaHlvbg--/https://o.aolcdn.com/hss/storage/midas/8077e086fe57dcd40c8ddc3dc0812482/204452788/edit24.jpg">
     </div>
 
   </div>
@@ -51,7 +51,7 @@ export default {
 }
 
 #app canvas {
-  height: 800px;
-  width: 800px;
+  height: 1000px;
+  width: 3000px;
 }
 </style>

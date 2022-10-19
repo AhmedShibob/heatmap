@@ -17,19 +17,19 @@ const data = { 7: [[1093.0, 721.5], [1085.0, 751.0], [1088.5, 762.0], [1091.0, 7
 
 let newData = [];
 
-Object.values(data).map(item => item.map((i) => {
-  newData = [...newData, { x: Math.ceil(i[0]), y: Math.ceil(i[1]), value: 0 }];
+Object.values(data).map(item => item.map((i, index) => {
+  newData = [...newData, { x: Math.ceil(i[0]), y: Math.ceil(i[1]), value: index }];
   return [];
 }));
 
-console.log('newData :>> ', newData);
+// console.log('newData :>> ', newData);
 
 
-console.log('data :>> ', data);
+// console.log('data :>> ', data);
 
 Vue.config.productionTip = false;
 Vue.use(Vueheatmap, {
-  heatmapPreload: newData.slice(0, 5),
+  heatmapPreload: newData,
 });
 
 
